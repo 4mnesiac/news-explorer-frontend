@@ -1,0 +1,14 @@
+@import url("./_theme/_light/header__menu_theme_light.css");
+
+.header__menu {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  color: inherit;
+  margin: 0;
+}
+@media screen and (max-width: 475px) {
+  .header__menu {
+    display: none;
+  }
+}

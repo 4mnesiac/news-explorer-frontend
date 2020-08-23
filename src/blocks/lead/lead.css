@@ -1,0 +1,26 @@
+@import url("./_theme/_light/lead_theme_light.css");
+@import url("./__title/lead__title.css");
+@import url("./__subtitle/lead__subtitle.css");
+@import url("./__search/lead__search.css");
+@import url("./__input/lead__input.css");
+@import url("./__heading/lead__heading.css");
+@import url("./__container/lead__container.css");
+@import url("./__button/lead__button.css");
+
+.lead {
+  padding: 80px 0;
+  color: inherit;
+  max-width: 100%;
+}
+@media screen and (max-width: 475px) {
+  .lead {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 511px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lead {
+    padding: 38px 0 48px;
+  }
+}

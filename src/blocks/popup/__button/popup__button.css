@@ -1,0 +1,22 @@
+.popup .popup__button {
+  width: 100%;
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 39px;
+  margin-bottom: 16px;
+  border-radius: 100px;
+  background-color: #2f71e5;
+  color: #fff;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.popup__button:disabled {
+  background-color: #e6e8eb;
+  color: #b6bcbf;
+}

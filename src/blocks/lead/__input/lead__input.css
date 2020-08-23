@@ -1,0 +1,36 @@
+.lead__input {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  border: 1px solid #d1d2d6;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  padding: 21px 30% 21px 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #1a1b22;
+  caret-color: #2f71e5;
+  outline: none;
+}
+.lead__input:disabled {
+  color: #b6bcbf;
+}
+
+.lead__input:focus::placeholder {
+  color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__input {
+    height: 56px;
+    padding: 17px 40% 17px 24px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .lead__input {
+    padding-right: 24px;
+  }
+}

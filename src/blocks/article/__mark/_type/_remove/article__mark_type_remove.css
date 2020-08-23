@@ -1,0 +1,9 @@
+.article__mark_type_remove {
+  background-image: url('../../../../../images/trash-disabled.svg');
+}
+
+.article__mark_type_remove:hover,
+.article__mark_type_remove:active {
+  background-image: url('../../../../../images/trash-enabled.svg');
+
+}

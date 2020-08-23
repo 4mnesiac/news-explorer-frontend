@@ -1,0 +1,16 @@
+.about__text {
+  max-width: 600px;
+  margin-top: 51px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about__text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .about__text {
+    margin-top: 0;
+  }
+}

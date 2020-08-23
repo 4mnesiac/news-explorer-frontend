@@ -1,0 +1,13 @@
+.lead__subtitle_theme_light {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .lead__subtitle_theme_light {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 475px) {
+  .lead .lead__subtitle_theme_light {
+    margin-bottom: 0;
+  }
+}

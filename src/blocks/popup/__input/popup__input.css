@@ -1,0 +1,39 @@
+@import url(./_has-error/popup__input_has-error.css);
+
+.popup__input {
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 31px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  padding-bottom: 5px;
+  margin-bottom: 24px;
+  outline: none;
+
+}
+
+.popup__input:focus {
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.popup__input:valid {
+  background-color: rgba(0, 255, 0, 0.07);
+}
+
+.popup__input::placeholder {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.popup__input:focus::placeholder {
+  color: transparent;
+}
+
+.popup__input:last-of-type {
+  margin-bottom: 0;
+}

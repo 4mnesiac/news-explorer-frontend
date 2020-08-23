@@ -1,0 +1,8 @@
+.lead__heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: rgba(26, 27, 34, 0.5);
+}

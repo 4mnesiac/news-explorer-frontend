@@ -1,0 +1,5 @@
+.header .mobile-menu__icon_theme_light,
+.header .mobile-menu__icon_theme_light::after,
+.header .mobile-menu__icon_theme_light::before {
+  background-color: #1a1b22;
+}

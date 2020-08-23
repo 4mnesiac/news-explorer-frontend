@@ -1,0 +1,19 @@
+.header__menu-item_type_signin {
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 100px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  min-width: 154px;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .header .header__menu-item_type_signin {
+    min-width: 128px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}

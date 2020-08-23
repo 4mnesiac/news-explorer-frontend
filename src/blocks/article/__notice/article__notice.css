@@ -1,0 +1,17 @@
+.article__notice {
+  height: 40px;
+  margin: 0;
+  padding: 0 6px;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+
+}
