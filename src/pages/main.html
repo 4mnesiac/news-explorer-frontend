@@ -29,17 +29,22 @@
               <li class="mobile-menu__item"><a href="./homepage.html" class="mobile-menu__link">Сохраненные статьи</a>
               </li>
               <li class="mobile-menu__item mobile-menu__item_type_signin">
-                <button class="btn btn_theme_dark header__auth-link_mobile">Авторизоваться</button></li>
+                <button class="btn btn_theme_dark header__auth-link_mobile">Авторизоваться</button>
+              </li>
               <li class=" mobile-menu__item hider mobile-menu__item_type_signin">
-                <button class="btn btn_theme_dark btn_type_logout hider">Выйти</button></li>
+                <button class="btn btn_theme_dark btn_type_logout hider">Выйти</button>
+              </li>
               </li>
             </ul>
           </div>
         </nav>
         <ul class="header__menu">
-          <li class="header__menu-item"><a href="./main.html" class="header__link header__link_active">Главная</a></li>
-          <li class="header__menu-item hider"><a href="./homepage.html" class="header__link header__link_saved">Сохранённые
-              статьи</a></li>
+          <li class="header__menu-item">
+            <a href="./main.html" class="header__link header__link_active">Главная</a>
+          </li>
+          <li class="header__menu-item hider">
+            <a href="./homepage.html" class="header__link header__link_saved">Сохранённые статьи</a>
+            </li>
           <li class="header__menu-item header__menu-item_type_signin">
             <a href="#modal" class="header__link header__link_type_login">Авторизоваться</a>
           </li>
@@ -229,9 +234,9 @@
         <a class="popup__link popup__link_type_success" href="./homepage.html">Выполнить вход</a>
       </div>
     </div>
+
   </div>
-  </div>
-  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+<script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>

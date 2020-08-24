@@ -1,6 +1,6 @@
 {
   "name": "news-explorer-frontend",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Фронтенд для дипломного проекта \"News Explorer\" Яндекс.Практикума",
   "main": "src/js/index.js",
   "dependencies": {
@@ -20,7 +20,7 @@
     "css-loader": "=3.5.3",
     "cssnano": "=4.1.10",
     "file-loader": "=6.0.0",
-    "gh-pages": "=2.2.0",
+    "gh-pages": "=3.1.0",
     "html-webpack-plugin": "=4.3.0",
     "image-webpack-loader": "=6.0.0",
     "mini-css-extract-plugin": "=0.9.0",
