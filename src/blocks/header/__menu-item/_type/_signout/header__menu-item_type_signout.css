@@ -1,10 +1,15 @@
 .header__menu-item_type_signout {
   display: inline-flex;
-  padding: 3.15px 0;
+  padding: 11px 0;
   border-radius: 100px;
   margin: 0;
   border: 1px solid;
   border-color: inherit;
   min-width: 98px;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .header__menu-item_type_signout {
+    padding: 7px 0;
+  }
 }

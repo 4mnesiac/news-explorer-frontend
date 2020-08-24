@@ -17,7 +17,9 @@
   align-items: center;
   outline: none;
 }
-
+.lead__button:focus {
+  outline: 2px outset #2f71e5;
+}
 .lead__button:hover {
   background: #347eff;
   cursor: pointer;

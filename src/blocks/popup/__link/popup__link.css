@@ -4,3 +4,6 @@
   text-decoration: none;
   color: #2f71e5;
 }
+.popup__link:focus {
+  outline: 2px outset #2f71e5;
+}

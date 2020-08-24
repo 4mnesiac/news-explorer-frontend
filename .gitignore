@@ -12,9 +12,11 @@ node_modules
 # Optional REPL history
 .DS_Store
 .idea
+/dist
 
 # Environments
 .env
 
 #Loggers
 *.log
+

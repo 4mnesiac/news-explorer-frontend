@@ -3,3 +3,6 @@
   cursor: pointer;
   color: #1a1b22;
 }
+.footer__link:focus {
+  outline: 2px outset #2f71e5;
+}

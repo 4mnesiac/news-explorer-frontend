@@ -1,5 +1,5 @@
-@import url('./_type/_remove/article__mark_type_remove.css');
-@import url('./_type/_save/article__mark_type_save.css');
+@import url("./_type/_remove/article__mark_type_remove.css");
+@import url("./_type/_save/article__mark_type_save.css");
 
 .article__mark {
   background-color: #fff;
@@ -13,4 +13,7 @@
   margin-left: 5px;
   border-radius: 8px;
   outline: none;
+}
+.article__mark:focus {
+  outline: 2px outset #2f71e5;
 }

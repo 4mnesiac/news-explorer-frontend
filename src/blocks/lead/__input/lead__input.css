@@ -22,6 +22,9 @@
 .lead__input:focus::placeholder {
   color: transparent;
 }
+.lead__input:focus {
+  outline: 2px outset #2f71e5;
+}
 
 @media screen and (max-width: 768px) {
   .lead__input {
