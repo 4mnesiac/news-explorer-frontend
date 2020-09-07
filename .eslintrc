@@ -1,3 +1,16 @@
 {
+  "rules": {
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true,
+        "allowAfterThisConstructor": true,
+        "enforceInMethodNames": true,
+        "allowFunctionParams": true
+      }
+    ],
+    "lines-between-class-members": "never"
+  },
+
   "extends": "airbnb-base"
 }

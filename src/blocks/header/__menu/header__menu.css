@@ -7,7 +7,7 @@
   color: inherit;
   margin: 0;
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 580px) {
   .header__menu {
     display: none;
   }

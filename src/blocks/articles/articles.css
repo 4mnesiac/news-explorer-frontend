@@ -7,10 +7,9 @@
   grid-gap: 16px;
 }
 
-
 @media screen and (max-width: 750px) {
   .articles {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 50%);
   }
 }
 

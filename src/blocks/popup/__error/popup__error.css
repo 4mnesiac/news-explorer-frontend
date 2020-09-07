@@ -1,5 +1,5 @@
 @import url("./_active/popup__error_active.css");
-
+@import url("./_type/_server-error/popup__error_type_server-error.css");
 .popup__error {
   display: none;
 }

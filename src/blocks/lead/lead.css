@@ -6,6 +6,7 @@
 @import url("./__heading/lead__heading.css");
 @import url("./__container/lead__container.css");
 @import url("./__button/lead__button.css");
+@import url("./__keywords/lead__keywords.css");
 
 .lead {
   padding: 80px 0;
