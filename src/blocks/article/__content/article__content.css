@@ -1,0 +1,20 @@
+.article__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  margin: 20px 24px 24px;
+}
+
+
+@media screen and (max-width: 820px) {
+  .article__content {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .article__content {
+    max-height: 100%;
+  }
+}

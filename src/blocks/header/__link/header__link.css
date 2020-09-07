@@ -1,0 +1,26 @@
+@import url("./_type/_login/header__link_type_login.css");
+@import url("./_type/_logout/header__link_type_logout.css");
+@import url("./_active/header__link_active.css");
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__link:hover {
+  cursor: pointer;
+}
+.header__link:focus {
+  outline: 2px outset #2f71e5;
+}
+@media screen and (max-width: 768px) {
+  .header .header__link {
+    font-size: 1rem;
+  }
+}

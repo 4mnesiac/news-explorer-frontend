@@ -1,0 +1,17 @@
+.article__image {
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .article__image {
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .article__image {
+    max-height: 196px;
+  }
+}

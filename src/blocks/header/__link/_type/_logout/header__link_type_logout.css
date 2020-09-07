@@ -1,0 +1,9 @@
+.header__link_type_logout {
+  align-items: center;
+}
+.header__link_type_logout:after {
+  content: url(../../../../../images/logout-black.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}

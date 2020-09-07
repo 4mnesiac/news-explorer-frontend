@@ -1,0 +1,9 @@
+.popup__subtitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  display: flex;
+  justify-content: center;
+}

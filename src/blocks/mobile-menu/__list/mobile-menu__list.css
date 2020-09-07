@@ -1,0 +1,9 @@
+.mobile-menu__list {
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 16px;
+  border-color: #fff;
+}

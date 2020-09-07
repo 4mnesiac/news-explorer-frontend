@@ -1,0 +1,10 @@
+.preloader__title {
+  margin: 24px 0 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #b6bcbf;
+}

@@ -1,0 +1,55 @@
+/* Also attached 8 fonts:
+- Roboto Slab regular 400, medium 500, bold 700;
+- Roboto regular 400, medium 500, black 900;
+- Source Sans Pro regular 400;
+- Inter regular 400.
+*/
+
+@font-face {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./robotoslab-regular.woff) format("woff");
+}
+@font-face {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./robotoslab-medium.woff) format("woff");
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url(./robotoslab-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./roboto-regular.woff) format("woff");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./roboto-medium.woff) format("woff");
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./roboto-black.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./sourcesanspro-regular.woff) format("woff");
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./inter-regular.woff) format("woff");
+}

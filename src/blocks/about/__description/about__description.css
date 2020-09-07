@@ -1,0 +1,15 @@
+.about__description {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #1a1b22;
+  margin: 24px 0 0;
+}
+
+@media screen and (max-width: 820px) {
+  .about__description {
+    margin-top: 16px;
+  }
+}

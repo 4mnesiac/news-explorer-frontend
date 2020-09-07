@@ -1,0 +1,19 @@
+@import url("./_type/_signin/header__menu-item-type_signin.css");
+@import url("./_type/_signout/header__menu-item_type_signout.css");
+
+.header__menu-item {
+  display: flex;
+  align-items: center;
+  margin: 0 32px 0 0;
+  list-style: none;
+  max-height: 80px;
+}
+.header__menu-item:last-of-type {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .header__menu-item {
+    margin-right: 16px;
+    font-size: 16px;
+  }
+}

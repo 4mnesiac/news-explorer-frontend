@@ -1,0 +1,19 @@
+@import url("./__title/article__title.css");
+@import url("./__text/article__text.css");
+@import url("./__tag/article__tag.css");
+@import url("./__notice/article__notice.css");
+@import url("./__mark/article__mark.css");
+@import url("./__mark-container/article__mark-container.css");
+@import url("./__image/article__image.css");
+@import url("./__date/article__date.css");
+@import url("./__content/article__content.css");
+@import url("./__author/article__author.css");
+
+.article {
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #1a1b22;
+}

@@ -1,0 +1,9 @@
+.footer__socials-item {
+  padding-left: 27.89px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__socials-item {
+    padding-left: 26.89px;
+  }
+}

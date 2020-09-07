@@ -1,0 +1,6 @@
+.btn_type_logout:after {
+  content: url(../../../../images/logout-white.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

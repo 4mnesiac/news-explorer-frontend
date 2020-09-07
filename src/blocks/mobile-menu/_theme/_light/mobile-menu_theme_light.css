@@ -1,0 +1,6 @@
+@media screen and (max-width: 630px) {
+  .header .mobile-menu_theme_light {
+    display: block;
+    border-color: #fff;
+  }
+}

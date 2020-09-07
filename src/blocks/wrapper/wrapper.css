@@ -1,0 +1,6 @@
+@import url("./_has-background/wrapper__has-background.css");
+
+.wrapper {
+  background-color: #f5f6f7;
+  color: #fff;
+}

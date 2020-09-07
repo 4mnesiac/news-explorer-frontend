@@ -1,0 +1,5 @@
+@media screen and (max-width: 630px) {
+  .header .header__menu_theme_light {
+    display: none;
+  }
+}

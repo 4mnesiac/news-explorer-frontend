@@ -1,0 +1,14 @@
+.popup .popup__content_type_success {
+  min-height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 43px 36px 51px;
+}
+
+@media screen and (max-width: 475px) {
+  .popup .popup__content_type_success {
+    height: 182px;
+    top: -186px;
+  }
+}

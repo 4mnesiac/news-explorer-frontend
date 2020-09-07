@@ -1,0 +1,44 @@
+.lead__button {
+  width: 168px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 64px;
+  background: #2f71e5;
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: inherit;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+.lead__button:focus {
+  outline: 2px outset #2f71e5;
+}
+.lead__button:hover {
+  background: #347eff;
+  cursor: pointer;
+}
+
+.lead__button:active {
+  background: #2a65cc;
+}
+@media screen and (max-width: 768px) {
+  .lead__button {
+    height: 56px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .lead__button {
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+    padding: 20px;
+    display: inline-flex;
+  }
+}

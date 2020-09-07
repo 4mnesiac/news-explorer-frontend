@@ -1,0 +1,11 @@
+.header__link_active {
+  border-bottom: 3px solid;
+  border-color: inherit;
+  padding-top: 3px;
+  height: 74px;
+}
+@media screen and (max-width: 820px) {
+  .header__link_active {
+    height: 59px;
+  }
+}

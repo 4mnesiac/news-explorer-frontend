@@ -1,0 +1,20 @@
+.about__photo-container {
+  margin-right: 56px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about__photo-container {
+    margin-right: 44px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .about__photo-container {
+    margin-right: 32px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .about__photo-container {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
