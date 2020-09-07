@@ -33,6 +33,9 @@ module.exports = {
         use: [
           isDev ? "style-loader" : {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            }
           },
           {
             loader: 'css-loader',
@@ -46,7 +49,10 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: "file-loader",
         options: {
-          name: "./vendor/fonts/[name].[ext]",
+          name: "./fonts/[name].[ext]",
+          options: {
+            publicPath: '../',
+          }
         },
       },
       {
@@ -55,6 +61,9 @@ module.exports = {
           "file-loader?name=./images/[name].[ext]",
           {
             loader: "image-webpack-loader",
+            options: {
+              publicPath: '../',
+            }
           },
         ],
       },
@@ -76,7 +85,7 @@ module.exports = {
       inject: false,
       hash: true,
       template: path.resolve(__dirname, "src", "pages", "index", "index.html"),
-      filename: "index.html",
+      filename: "pages/index.html",
       chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
