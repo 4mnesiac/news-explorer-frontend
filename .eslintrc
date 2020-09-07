@@ -8,8 +8,7 @@
         "enforceInMethodNames": true,
         "allowFunctionParams": true
       }
-    ],
-    "lines-between-class-members": "never"
+    ]
   },
 
   "extends": "airbnb-base"
