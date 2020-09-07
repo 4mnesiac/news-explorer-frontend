@@ -1,6 +1,7 @@
 # News Explorer Frontend
 
-## [Ссылка на проект](https://4mnesiac.github.io/news-explorer-frontend/pages/main.html)
+## Ссылка на gh-pages 
+[https://4mnesiac.github.io/news-explorer-frontend/pages/index.html](https://4mnesiac.github.io/news-explorer-frontend/pages/index.html)
 
 ## Описание
 
