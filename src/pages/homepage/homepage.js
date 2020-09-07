@@ -93,11 +93,11 @@ const getArticles = () => {
 
 logoutBtnMobile.addEventListener('click', () => {
   localStorage.clear();
-  window.location.replace('../index.html')
+  window.location.replace('./index.html')
 });
 logoutBtn.addEventListener('click', () => {
   localStorage.clear();
-  window.location.replace('../index.html')
+  window.location.replace('./index.html')
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -105,6 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
     header.render();
     getArticles();
   } else {
-    window.location.replace('../index.html');
+    window.location.replace('./index.html');
   }
 })

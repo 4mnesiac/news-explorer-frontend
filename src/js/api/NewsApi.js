@@ -11,9 +11,9 @@ export default class NewsApi {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(res);
+        return Promise.reject(res.json());
       })
       .then((articles) => articles.articles)
-      .catch((err) => err.json());
+      .catch((err) => console.log(err));
   }
 }

@@ -1,4 +1,4 @@
-import '../../css/mainpage.css'
+import '../../css/index.css'
 import MainApi from '../../js/api/MainApi';
 import NewsApi from '../../js/api/NewsApi';
 import Form from '../../js/components/Form.js';
