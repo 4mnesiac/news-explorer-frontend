@@ -18,7 +18,7 @@ const articles = document.querySelector('.articles');
 export const api = new MainApi(SERVER_URL);
 const newArticle = (api) => new NewsCard(api);
 const header = new Header(headerElement, api);
-const savedCard = new SavedCard(articles, api, newArticle);
+const savedCard = new SavedCard(articles, api, newArticle, leadTitle);
 
 // элементы для ключевых слов и статей
 const leadSubtitle = document.querySelector('.lead__subtitle');
@@ -27,8 +27,6 @@ const secondKeyword = document.querySelector('#secondKeyword');
 const otherKeyword = document.querySelector('#otherKeyword');
 const keywordConnector = document.querySelector('#keywordConnector')
 const leadTitle = document.querySelector('.lead__title');
-
-// меняет заголовок от количества статей
 
 // принимает массив ключевых слов, сортирует по популярности
 const getKeywords = (arr) => {

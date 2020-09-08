@@ -147,7 +147,6 @@ export default class NewsCard extends BaseComponent {
           this.data.url
         )
         .then((res) => {
-          console.log(res);
           e.target.classList.add("article__mark_active");
           this.id = res._id
         })

@@ -1,12 +1,13 @@
 import NewsCardList from "./NewsCardList";
 
 export default class SavedCards extends NewsCardList {
-  constructor(container, api, func) {
+  constructor(container, api, func, title) {
     super();
     this.api = api;
     this.container = container;
     this.func = func;
     this.keyword = '';
+    this.title = title;
   }
 
   renderResults(array) {
@@ -19,7 +20,7 @@ export default class SavedCards extends NewsCardList {
     this.container.appendChild(article.create(data, data.keyword));
   }
 
-  setTitle(username, counter, title) {
+  setTitle(username, counter) {
     if (counter === 1) {
       title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненная статья`;
     } else if (counter <= 4 && counter > 1) {

@@ -85,7 +85,7 @@ module.exports = {
       inject: false,
       hash: true,
       template: path.resolve(__dirname, "src", "pages", "index", "index.html"),
-      filename: "index.html",
+      filename: "pages/index.html",
       chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
