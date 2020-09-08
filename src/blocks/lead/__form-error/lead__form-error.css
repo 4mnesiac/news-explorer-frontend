@@ -1,0 +1,9 @@
+.lead__form-error {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  line-height: 1.5rem;
+  padding-left: 24px;
+}

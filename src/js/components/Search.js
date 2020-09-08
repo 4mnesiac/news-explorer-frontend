@@ -19,6 +19,12 @@ export default class Search extends BaseComponent {
         event: 'submit',
         callback: (e) => this.getNews(e)
       },
+      {
+        element: this.form,
+        event: 'input',
+        callback: (e) => this._checkValidity(e)
+      },
+
     ])
   }
 
@@ -60,5 +66,17 @@ export default class Search extends BaseComponent {
         };
         return this.cardList.getArticles(res, input);
       })
+  }
+  _checkValidity(e) {
+    const emptyInput = 'Нужно ввести ключевое слово';
+    const error = this.form.querySelector('.lead__form-error');
+    if (e.target.validity.valueMissing) {
+      error.textContent = emptyInput;
+      error.classList.remove('hider');
+    }
+    else {
+      error.textContent = '';
+      error.classList.add('hider');
+    }
   }
 }
