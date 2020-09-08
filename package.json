@@ -1,6 +1,6 @@
 {
   "name": "news-explorer-frontend",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Фронтенд для дипломного проекта \"News Explorer\" Яндекс.Практикума",
   "main": "src/js/index.js",
   "dependencies": {
