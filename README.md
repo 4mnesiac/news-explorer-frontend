@@ -1,6 +1,7 @@
 # News Explorer Frontend
 
-## Ссылка на gh-pages 
+## Ссылка на gh-pages
+
 [https://4mnesiac.github.io/news-explorer-frontend/pages/index.html](https://4mnesiac.github.io/news-explorer-frontend/pages/index.html)
 
 ## Описание
@@ -48,3 +49,5 @@
 - данные в форме валидируются и обрабатываются;
 
 **v.3.0.2** - деплой на gh-pages, исправление мелких ошибок;
+
+**v.3.0.3** - исправлена ошибка доступа к главному API;
