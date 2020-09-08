@@ -22,14 +22,14 @@ export default class SavedCards extends NewsCardList {
 
   setTitle(username, counter) {
     if (counter === 1) {
-      title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненная статья`;
+      this.title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненная статья`;
     } else if (counter <= 4 && counter > 1) {
-      title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненные статьи`;
+      this.title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненные статьи`;
     } else if (counter > 4) {
-      title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненных статей`;
+      this.title.textContent = `${username[0].toUpperCase() + username.slice(1)}, у вас ${counter} сохраненных статей`;
     } else {
-      title.textContent = 'У вас нет сохранённых статей';
-      title.nextElementSibling.classList.add('hider');
+      this.title.textContent = 'У вас нет сохранённых статей';
+      this.title.nextElementSibling.classList.add('hider');
     }
   }
 }
