@@ -8,6 +8,7 @@
 @import url("./__date/article__date.css");
 @import url("./__content/article__content.css");
 @import url("./__author/article__author.css");
+@import url("./__link/article__link.css");
 
 .article {
   background-color: #fff;

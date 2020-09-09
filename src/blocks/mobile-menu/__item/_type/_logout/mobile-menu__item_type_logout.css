@@ -1,0 +1,12 @@
+.mobile-menu__item_type_logout {
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 100px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin: 44px 0 0;
+  min-width: 154px;
+  text-align: center;
+  justify-content: center;
+}

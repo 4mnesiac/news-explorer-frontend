@@ -2,6 +2,9 @@
   margin: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
+  max-height: 225px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 820px) {

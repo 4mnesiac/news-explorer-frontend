@@ -10,13 +10,16 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "src", "js", "index"),
-    homepage: path.resolve(__dirname, "src", "js", "homepage", "index"),
+    index: path.resolve(__dirname, "src", "pages", "index", "index.js"),
+    homepage: path.resolve(__dirname, "src", "pages", "homepage", "homepage.js"),
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: "./js/[name].[chunkhash].js",
     publicPath: '../'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -36,9 +39,6 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            }
           },
           "postcss-loader",
         ],
@@ -49,7 +49,10 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: "file-loader",
         options: {
-          name: "./vendor/[name].[ext]",
+          name: "./fonts/[name].[ext]",
+          options: {
+            publicPath: '../',
+          }
         },
       },
       {
@@ -60,7 +63,7 @@ module.exports = {
             loader: "image-webpack-loader",
             options: {
               publicPath: '../',
-            },
+            }
           },
         ],
       },
@@ -80,13 +83,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: path.resolve(__dirname, "src", "pages", "main.html"),
-      filename: "pages/main.html",
-      chunks: ["main"],
+      hash: true,
+      template: path.resolve(__dirname, "src", "pages", "index", "index.html"),
+      filename: "pages/index.html",
+      chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: path.resolve(__dirname, "src", "pages", "homepage.html"),
+      hash: true,
+      template: path.resolve(__dirname, "src", "pages", "homepage", "homepage.html"),
       filename: "pages/homepage.html",
       chunks: ["homepage"],
     }),
