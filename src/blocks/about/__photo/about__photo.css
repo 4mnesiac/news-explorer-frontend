@@ -1,7 +1,7 @@
 .about__photo {
   width: 100%;
   max-width: 464px;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1439px) {
@@ -17,7 +17,6 @@
 }
 
 @media screen and (max-width: 820px) {
-
   .about__photo {
     width: 272px;
   }
