@@ -4,7 +4,7 @@
 
 [https://4mnesiac.github.io/news-explorer-frontend/pages/index.html](https://4mnesiac.github.io/news-explorer-frontend/pages/index.html)
 
-[http://nhance.tk/](http://nhance.tk/)
+[https://nhance.tk/](https://nhance.tk/)
 
 ## Описание
 
