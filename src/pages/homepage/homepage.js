@@ -14,8 +14,6 @@ const headerElement = document.querySelector('header');
 // контейнер статей
 const articles = document.querySelector('.articles');
 
-
-
 // элементы для ключевых слов и статей
 const leadSubtitle = document.querySelector('.lead__subtitle');
 const firstKeyword = document.querySelector('#firstKeyword');
@@ -42,6 +40,7 @@ const getKeywords = (arr) => {
   const result = res.sort().reverse();
   return result;
 };
+
 // отрисовывает ключевые слова
 const renderKeywords = (articles) => {
   const cards = Array.from(articles);
@@ -74,6 +73,7 @@ const renderKeywords = (articles) => {
     otherKeyword.textContent = `${uniqueKeywords.length - 2} другим`;
   }
 }
+
 // получаем статьи и имя владельца, отправляем на рендер
 const getArticles = () => {
   api.getUserData()
@@ -90,7 +90,7 @@ const getArticles = () => {
       console.log(err.message);
     });
 };
-
+// разлогиниваем и редиректим на главную
 logoutBtnMobile.addEventListener('click', () => {
   localStorage.clear();
   window.location.replace('./index.html')
@@ -99,7 +99,7 @@ logoutBtn.addEventListener('click', () => {
   localStorage.clear();
   window.location.replace('./index.html')
 });
-
+// проверка на логин
 document.addEventListener('DOMContentLoaded', () => {
   if (isLogged()) {
     header.render();

@@ -9,9 +9,10 @@ import NewsCardList from '../../js/components/NewsCardList.js';
 import { SERVER_URL, NEWS_API_KEY, NEWS_API_URL } from '../../js/constants/constants';
 import Search from '../../js/components/Search';
 
+// Variables
 export const searchResults = document.querySelector('.search-results');
-// инициализируем api
 
+// инициализируем api
 export const api = new MainApi(SERVER_URL);
 export const newsApi = new NewsApi(NEWS_API_URL, NEWS_API_KEY);
 
@@ -19,7 +20,6 @@ export const newsApi = new NewsApi(NEWS_API_URL, NEWS_API_KEY);
 export const loginForm = document.querySelector(".popup__form_login");
 export const regForm = document.querySelector(".popup__form_signup");
 const searchForm = document.querySelector(".lead__search");
-
 
 // экземпляры форм
 export const loginFormInstance = new Form(loginForm);
@@ -54,7 +54,7 @@ export const header = new Header(headerElement, api);
 
 // статьи
 const newArticle = (api) => new NewsCard(api);
-export const newsCardInstance = new NewsCard(api);
+export const newsCardInstance = new NewsCard(api); 
 export const articlesList = document.querySelector('.articles');
 export const showMoreBtn = document.querySelector('.search-results__button');
 export const newsCardList = new NewsCardList(articlesList, showMoreBtn, newArticle, api)
@@ -66,6 +66,7 @@ export const btn = document.querySelector('.search-results__button');
 export const preloader = document.querySelector(".preloader");
 const search = new Search(newsCardList, notFound, preloader, searchForm, newsApi);
 
+// Listeners
 // слушатели на открытие попапа логина
 authBtn.addEventListener("click", () => loginPopupInstance.open());
 mobileAuthBtn.addEventListener("click", () => loginPopupInstance.open());
@@ -85,7 +86,7 @@ successTransferLink.addEventListener('click', (event) => { // переход к 
 regForm.addEventListener('submit', (event) => {
   event.preventDefault();
   api.signup(
-    regForm.email.value,
+    regForm.email.value, 
     regForm.regPassword.value,
     regForm.name.value,
   )
@@ -95,7 +96,9 @@ regForm.addEventListener('submit', (event) => {
       }
       successPopupInstance.transfer(event);
     })
+    .catch(err => console.error(err))
 });
+
 // вход пользователя
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -109,6 +112,7 @@ loginForm.addEventListener('submit', (event) => {
         header.render();
       }
     })
+    .catch(err => console.error(err))
 })
 
 // реализация логаута
@@ -120,13 +124,8 @@ logoutBtn.addEventListener('click', () => {
   localStorage.clear();
   header.render();
 });
-// function deleteCookie(name) {
-//   setCookie(name, "", {
-//     'max-age': -1
-//   })
-// }
 
-// вызовы
+// Calls
 search.setEventListeners();
 loginFormInstance.setEventListeners();
 regFormInstance.setEventListeners();
